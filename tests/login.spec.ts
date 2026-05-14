@@ -1,15 +1,22 @@
 import { test } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
+import { readCSV } from '../utils/csvReader';
 
-test('successful login', async ({ page }) => {
-  const loginPage = new LoginPage(page);
+test('login using CSV data', async ({ page }) => {
 
-  await loginPage.navigate();
+  const users = await readCSV('test-data/users.csv');
 
-  await loginPage.login(
-    'standard_user',
-    'secret_sauce'
-  );
+  for (const user of users) {
 
-  await loginPage.verifyLoginSuccess();
+    const loginPage = new LoginPage(page);
+
+    await loginPage.navigate();
+
+    await loginPage.login(
+      user.username,
+      user.password
+    );
+
+    await loginPage.verifyLoginSuccess();
+  }
 });

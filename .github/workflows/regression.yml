@@ -32,7 +32,9 @@ jobs:
           libdrm2 \
           libxkbcommon0 \
           libatspi2.0-0 \
-          libgtk-3-0 || true
+          libgtk-3-0 
+          libwoff2-1.0.2 \
+          libgles2-mesa || true
       
       - name: Install Dependencies
         run: npm install

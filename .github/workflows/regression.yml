@@ -27,7 +27,7 @@ jobs:
           libxi6 \
           libxext6 \
           libx11-6 \
-          libx264-dev
+          libx264-dev \
           libgles2-mesa \
           libgbm1 \
           libdrm2 \

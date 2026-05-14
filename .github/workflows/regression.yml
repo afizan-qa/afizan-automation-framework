@@ -20,7 +20,7 @@ jobs:
       - name: Install System Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libglesv2-mesa libx264-dev
+          sudo apt-get install -y libgl1-mesa-glx libx264-dev
 
       - name: Install Dependencies
         run: npm install

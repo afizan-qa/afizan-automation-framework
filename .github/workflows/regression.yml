@@ -38,8 +38,8 @@ jobs:
           libgtk-3-0 \
           libgles2-mesa-dev \
           libxrandr2 \
-          libsecret-1 \
-          libwoff2-1.0.2
+          libsecret-1-dev \
+          libwoff2-1
       
       - name: Install Dependencies
         run: npm install

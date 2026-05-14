@@ -28,12 +28,11 @@ jobs:
           libxext6 \
           libx11-6 \
           libx264-dev \
-          libgles2-mesa \
           libgbm1 \
           libdrm2 \
           libxkbcommon0 \
           libatspi2.0-0 \
-          libgtk-3-0
+          libgtk-3-0 || true
       
       - name: Install Dependencies
         run: npm install

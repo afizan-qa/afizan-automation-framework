@@ -17,6 +17,11 @@ jobs:
         with:
           node-version: 26
 
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libglesv2-mesa libx264-dev
+
       - name: Install Dependencies
         run: npm install
 

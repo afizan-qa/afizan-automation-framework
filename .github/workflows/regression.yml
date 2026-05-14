@@ -27,7 +27,6 @@ jobs:
           libxi6 \
           libxext6 \
           libx11-6 \
-          libgles2-mesa \
           libx264-dev
       
       - name: Install Dependencies

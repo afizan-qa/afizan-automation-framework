@@ -33,7 +33,7 @@ jobs:
           libxkbcommon0 \
           libatspi2.0-0 \
           libgtk-3-0 \
-          libwoff2-1.0.2 \
+          libwoff2-dev \
           libgles2-mesa-dev \
           libxrandr2
       

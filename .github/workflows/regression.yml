@@ -34,9 +34,8 @@ jobs:
           libatspi2.0-0 \
           libgtk-3-0 \
           libwoff2-1.0.2 \
-          libgles2-mesa \
-          libglesv2-mesa \
-          libx264-163|| true
+          libgles2-mesa-dev \
+          libxrandr2
       
       - name: Install Dependencies
         run: npm install

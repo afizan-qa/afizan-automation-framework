@@ -39,7 +39,7 @@ jobs:
           libgles2-mesa-dev \
           libxrandr2 \
           libsecret-1-dev \
-          libwoff2-1
+          libwoff2-dev
       
       - name: Install Dependencies
         run: npm install

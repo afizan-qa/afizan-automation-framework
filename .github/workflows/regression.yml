@@ -18,28 +18,8 @@ jobs:
           node-version: 26
           
       - name: Install System Dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y software-properties-common
-          sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-          sudo apt-get update
-          sudo apt-get install -y \
-          libopengl0 \
-          libxrender1 \
-          libxinerama1 \
-          libxi6 \
-          libxext6 \
-          libx11-6 \
-          libx264-dev \
-          libgbm1 \
-          libdrm2 \
-          libxkbcommon0 \
-          libatspi2.0-0 \
-          libgtk-3-0 \
-          libgles2-mesa-dev \
-          libxrandr2 \
-          libsecret-1-dev 
-          
+        run: npx playwright install-deps webkit
+  
       - name: Install Dependencies
         run: npm install
 
